@@ -53,7 +53,7 @@ axis(1,at=c(0,1440,2880),labels=c("Thu","Fri","Sat"),tck=-0.05)
 dev.cur()
 
 legend('topright',
-       c("sub_metering_1","sub_metering_2","sub_metering_3"),
+       c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
        bty = "n",
        lty=1,
        col=c("black","red","blue"))
@@ -83,5 +83,5 @@ axis(1,at=c(0,1440,2880),labels=c("Thu","Fri","Sat"),tck=-0.05)
 #}END: Chart 2:2
 
 
-#dev.off()
+dev.off()
 
