@@ -17,14 +17,14 @@ Data File Download, Extraction and Reduction
     household_power_consumption.txt *133 Mbytes*
     20070201.20070202.household_power_consumption.txt *0.365 Mbytes*
     
+    This latter file was generated using the cygwin/unix/bash utilities cat and grep.
+    See below for Scripts.
+    
 **Download and Extraction Methods:**
 
     Downloaded with IE Web Browser,
     Unzipped with With Windows Utilities
 
-**Download Date And Time:** 
-
-    2014-07-12 19:45 UTC
     
 **Data Reduction Method for the Dates 2007-02-01 and 2007-02-02**
 
@@ -35,7 +35,7 @@ Data File Download, Extraction and Reduction
     
     cat household_power_consumption.txt | grep "1/2/2007" | grep -v "21/2" | grep -v "11/2" >> 20070201.20070202.household_power_consumption.txt
     
-    cat household_power_consumption.txt | grep "1/2/2007" | grep -v "22/2" | grep -v "12/2" >> 20070201.20070202.household_power_consumption.txt
+    cat household_power_consumption.txt | grep "2/2/2007" | grep -v "22/2" | grep -v "12/2" >> 20070201.20070202.household_power_consumption.txt
 
     
 

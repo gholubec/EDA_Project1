@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Exploratory Data Analysis Project 1 README and Code Book</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>Exploratory Data Analysis Project 1 README and Code Book</h1>
+
+<h2>Data File Download, Extraction and Reduction</h2>
+
+<p><strong>Source URL:</strong></p>
+
+<pre><code>http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip 
+</code></pre>
+
+<p><strong>Destination Directory:</strong></p>
+
+<pre><code>G:/R_WorkingDirectory.d/ExploratoryDataAnalysis.d/Project1.d/dat.d/exdata_data_household_power_consumption
+</code></pre>
+
+<p><strong>Data File Name and Size:</strong></p>
+
+<pre><code>household_power_consumption.txt *133 Mbytes*
+20070201.20070202.household_power_consumption.txt *0.365 Mbytes*
+
+This latter file was generated using the cygwin/unix/bash utilities cat and grep.
+**cat household_power_consumption.txt | grep [1,2]\/2\/2007\; &gt; 20070201.20070202.household_power_consumption.txt**
+</code></pre>
+
+<p><strong>Download and Extraction Methods:</strong></p>
+
+<pre><code>Downloaded with IE Web Browser,
+Unzipped with With Windows Utilities
+</code></pre>
+
+<p><strong>Download Date And Time:</strong> </p>
+
+<pre><code>2014-07-12 19:45 UTC
+</code></pre>
+
+<p><strong>Data Reduction Method for the Dates 2007-02-01 and 2007-02-02</strong></p>
+
+<pre><code>*Utilized cygwin unix bash utilities:*
+
+cat household_power_consumption.txt | grep Date\; &gt; 20070201.20070202.household_power_consumption.txt
+
+cat household_power_consumption.txt | grep &quot;1/2/2007&quot; | grep -v &quot;21/2&quot; | grep -v &quot;11/2&quot; &gt;&gt; 20070201.20070202.household_power_consumption.txt
+
+cat household_power_consumption.txt | grep &quot;1/2/2007&quot; | grep -v &quot;22/2&quot; | grep -v &quot;12/2&quot; &gt;&gt; 20070201.20070202.household_power_consumption.txt
+</code></pre>
+
+</body>
+
+</html>
+
